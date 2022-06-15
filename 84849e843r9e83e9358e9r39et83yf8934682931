@@ -17,6 +17,7 @@ local DaHoodSettings = {
     Prediction = 0.14,
     AimLockKeybind = Enum.KeyCode.C
 }
+
 getgenv().DaHoodSettings = DaHoodSettings
 
 mouse.KeyDown:Connect(function(key)
