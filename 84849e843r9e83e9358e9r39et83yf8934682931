@@ -22,11 +22,11 @@ getgenv().DaHoodSettings = DaHoodSettings
 
 mouse.KeyDown:Connect(function(key)
 if key == AimLockKeybind then
-if getgenv().Aiming.Enabled == true then
- getgenv().Aiming.Enabled = false
+if SilentAim == true then
+ SilentAim = false
  NotifyLib.prompt('saturn', 'off', 2)
 else
-getgenv().Aiming.Enabled = true
+SilentAim = true
 NotifyLib.prompt('saturn', 'on', 2)
 end
 end
